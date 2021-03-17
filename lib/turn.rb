@@ -45,3 +45,7 @@ def position_taken?(board,index)
    return true
  end
 end
+
+def move(board, location, token = "X")
+  board[index.to_i-1] = token
+end
