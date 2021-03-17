@@ -16,11 +16,19 @@ end
 
 
 
-def turn
+def turn(board)
   puts "Please enter 1-9:"
+  input = gets.strip
+  if valid_move?(board, input)
+    move(board, input)
+  else
+    turn(board)
+  end
+  display_board(board)
 end
 
-def move(board, index)
+def move(board, location, current_player = "X")
+  board[location.to_i-1] = current_player
 end
 
 def input_to_index(user_input)
