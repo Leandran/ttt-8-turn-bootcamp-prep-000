@@ -27,8 +27,7 @@ def turn(board)
   display_board(board)
 end
 
-def move(board, index)
-end
+
 
 def input_to_index(user_input)
   input = user_input.to_i
