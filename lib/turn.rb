@@ -46,6 +46,6 @@ def position_taken?(board,index)
  end
 end
 
-def move(board, location, token = "X")
+def move(board, index, token = "X")
   board[index.to_i-1] = token
 end
