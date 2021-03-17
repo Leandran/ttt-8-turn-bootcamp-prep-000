@@ -29,12 +29,6 @@ end
 
 
 
-def input_to_index(user_input)
-  input = user_input.to_i
-  input -= 1
-  return input
-end
-
 
 def position_taken?(board,index)
   if board[index] == " " || board[index] == "" || board[index] == nil
@@ -46,5 +40,5 @@ def position_taken?(board,index)
 end
 
 def move(board, index, token = "X")
-  board[index.to_i] = token
+  board[index.to_i-1] = token
 end
